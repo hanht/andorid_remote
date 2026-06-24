@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RemoteControlServer</string>
+    <string name="accessibility_service_label">远程控制输入服务</string>
+    <string name="accessibility_service_description">允许远程控制端在本设备上执行点击、滑动、返回、Home 和最近任务操作。</string>
+</resources>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>远程控制</title>
+    <link rel="stylesheet" href="style.css?v=20260623.3">
+</head>
+<body>
+    <div class="container">
+        <!-- 连接界面 -->
+        <div id="connect-screen" class="screen">
+            <h1>远程控制</h1>
+            <div class="connect-form">
+                <input type="text" id="ip-address" placeholder="输入安卓设备IP地址或 relay">
+                <button id="connect-btn">连接</button>
+                <button id="discover-btn">自动发现设备</button>
+            </div>
+            <div id="device-list" class="device-list hidden">
+                <h3>发现的设备</h3>
+                <ul id="devices"></ul>
+            </div>
+            <div id="connect-status" class="status"></div>
+        </div>
+
+        <!-- 控制界面 -->
+        <div id="control-screen" class="screen hidden">
+            <div class="header">
+                <h2>远程控制</h2>
+                <div class="status-bar">
+                    <span id="connection-status">已连接</span>
+                    <button id="disconnect-btn">断开连接</button>
+                </div>
+            </div>
+            
+            <div class="screen-container">
+                <img id="remote-screen" src="" alt="远程屏幕">
+            </div>
+
+            <div class="control-panel">
+                <div class="controls">
+                    <button class="control-btn" id="home-btn">Home</button>
+                    <button class="control-btn" id="back-btn">Back</button>
+                    <button class="control-btn" id="menu-btn">Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=20260623.3"></script>
+</body>
+</html>

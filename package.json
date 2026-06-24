@@ -1,0 +1,25 @@
+{
+  "name": "remote-control-server",
+  "version": "1.0.0",
+  "description": "远程控制WebSocket服务端",
+  "main": "server.js",
+  "packageManager": "pnpm@11.5.3",
+  "scripts": {
+    "start": "node server.js",
+    "start:pm2": "pm2 start server.js --name remote-control-server",
+    "stop": "pm2 stop remote-control-server",
+    "restart": "pm2 restart remote-control-server",
+    "logs": "pm2 logs remote-control-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "keywords": [
+    "websocket",
+    "remote-control",
+    "server"
+  ],
+  "author": "",
+  "license": "MIT"
+}

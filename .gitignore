@@ -1,0 +1,32 @@
+# Operating system and IDE files
+.DS_Store
+.idea/
+*.iml
+
+# Node.js
+node_modules/
+.pnpm-store/
+npm-debug.log*
+pnpm-debug.log*
+
+# Android and Gradle
+**/.gradle/
+**/.kotlin/
+**/build/
+RemoteControlServer/local.properties
+*.apk
+*.aab
+.externalNativeBuild/
+.cxx/
+captures/
+
+# Runtime and local configuration
+*.log
+.env
+.env.*
+!.env.example
+web-client/api/devices.json
+
+# Legacy local prototypes (not used by the current build)
+/index.html
+/RemoteControlServer/myapplication/
